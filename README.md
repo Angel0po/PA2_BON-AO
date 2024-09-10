@@ -66,6 +66,7 @@ z
 array([3. , 3.5, 4. , 4.5, 5. , 5.5, 6. , 6.5])
 ```
 
+Using this information, I could create an array and inside the argument of the array is the command of np.range of all first one hundred positive integers
 
 
 Using this information, I created an array and inputted the arguments of .arange(1,101,1) to store 1 to 100 integers inside an array. I then used the .resize command to resize the array to be 10x10.
