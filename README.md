@@ -44,7 +44,7 @@ data = np.load('epk.npy')
 data
 ```
 
-And for saving the normalized array to 'X_normalized.npy', the code executed is as follows;
+And for saving the normalized array to 'X_normalized.npy', the code executed is as follows. Finishing the solution to the first problem.
 ``` python
 #Save normalized array to 'X_normalized.npy'
 np.save('X_normalized.npy', Z_X)
