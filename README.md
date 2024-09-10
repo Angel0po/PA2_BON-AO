@@ -128,7 +128,7 @@ print(A)
  [ 91  92  93  94  95  96  97  98  99 100]]
 ```
 
-The next step is to then square all the elements. I found a command through the internet that squares all the elements by itself inside an array and used it, as seen below;
+The next step is to square all the elements by itself. I found a command through the internet that squares all the elements by itself inside an array and used it, as seen below;
 ``` python
 #Stores a new array that squared every element by itself
 Squared_A = np.square(A)
@@ -147,7 +147,20 @@ print(Squared_A)
  [ 8281  8464  8649  8836  9025  9216  9409  9604  9801 10000]]
 ```
 
-I then squared the array using .square and stored the data into a new variable named 'Squared_A'. Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated to 0 to find all the numbers when divided by 3 and leaving no remainder in the 'Squared_A' Array.
+I stored the new array of the squared elements to 'Squared_A'.  Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated it to 0 to be the condition. I then stored the new array of elements divisible by 3 in 'Div_by_3'. The code executed can be seen below;
+``` python
+#Stores every element from Squared_A that is divisible by 3
+Div_by_3 = Squared_A[A%3==0]
 
-The data of the numbers, when divided by 3 and left with no remainder, would then be stored in 'Div_by_3' and eventually saved to 'div_by_3.npy' using .save
+#Supposed Output (NOT INCLUDED IN FINAL OUTPUT)
+print(Div_by_3)
+[   9   36   81  144  225  324  441  576  729  900 1089 1296 1521 1764
+ 2025 2304 2601 2916 3249 3600 3969 4356 4761 5184 5625 6084 6561 7056
+ 7569 8100 8649 9216 9801]
+```
 
+The last step of the solution to problem two is to save the array of 'Div_by_3'  as 'div_by_3.npy'; the code can be seen below;
+``` python
+#Save array with elements divisble by 3 to 'div_by_3.npy'
+np.save('div_by_3.npy',Div_by_3)
+```
