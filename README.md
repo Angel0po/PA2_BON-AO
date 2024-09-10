@@ -4,7 +4,7 @@ Programming Assignment 2 - Bon-ao, Angelo B. - ECE2112 - 2ECED
 After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straightforward as the needed syntax and commands were already tackled during the previous lesson.
 
 To start solving both problems, I have to import the libra.ry of Numerical Python as numpy onto the code for it to be used.
-```
+``` python
 #Import numerical python library
 import numpy as np 
 ```
