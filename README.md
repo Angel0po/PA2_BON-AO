@@ -108,14 +108,45 @@ array([[4],
        [1]])
 ```
 
-Researching more about the two commands, I found that the biggest difference between them is that .reshape(m,n) can only change the shape and not modify the number of elements to form the shape it is tasked to create. On the other hand, .resize(m,n) can add or remove the number of elements within an array to force it to become the inputted size. In this problem, both commands can be used as there are enough elements to use .reshape and .resize for the elements to not be modified. I chose to use reshape to make sure no element was modified.
+Researching more about the two commands, I found that the biggest difference between them is that .reshape(m,n) can only change the shape and not modify the number of elements to form the shape it is tasked to create. On the other hand, .resize(m,n) can add or remove the number of elements within an array to force it to become the inputted size. In this problem, both commands can be used as there are enough elements to use .reshape and .resize for the elements not to be modified. I chose to use resize to make sure the array was resized to a 10x10 array.
 
 ``` python
 #Resize array to be 10 x 10
-A.reshape(10,10)
+A.resize(10,10)
+
+#Supposed Output (NOT INCLUDED IN FINAL OUTPUT)
+print(A)
+[[  1   2   3   4   5   6   7   8   9  10]
+ [ 11  12  13  14  15  16  17  18  19  20]
+ [ 21  22  23  24  25  26  27  28  29  30]
+ [ 31  32  33  34  35  36  37  38  39  40]
+ [ 41  42  43  44  45  46  47  48  49  50]
+ [ 51  52  53  54  55  56  57  58  59  60]
+ [ 61  62  63  64  65  66  67  68  69  70]
+ [ 71  72  73  74  75  76  77  78  79  80]
+ [ 81  82  83  84  85  86  87  88  89  90]
+ [ 91  92  93  94  95  96  97  98  99 100]]
 ```
 
-The next step is to then square all the elements
+The next step is to then square all the elements. I found a command through the internet that squares all the elements by itself inside an array and used it, as seen below;
+``` python
+#Stores a new array that squared every element by itself
+Squared_A = np.square(A)
+
+#Supposed Output (NOT INCLUDED IN FINAL OUTPUT)
+print(Squared_A)
+[[    1     4     9    16    25    36    49    64    81   100]
+ [  121   144   169   196   225   256   289   324   361   400]
+ [  441   484   529   576   625   676   729   784   841   900]
+ [  961  1024  1089  1156  1225  1296  1369  1444  1521  1600]
+ [ 1681  1764  1849  1936  2025  2116  2209  2304  2401  2500]
+ [ 2601  2704  2809  2916  3025  3136  3249  3364  3481  3600]
+ [ 3721  3844  3969  4096  4225  4356  4489  4624  4761  4900]
+ [ 5041  5184  5329  5476  5625  5776  5929  6084  6241  6400]
+ [ 6561  6724  6889  7056  7225  7396  7569  7744  7921  8100]
+ [ 8281  8464  8649  8836  9025  9216  9409  9604  9801 10000]]
+```
+
 I then squared the array using .square and stored the data into a new variable named 'Squared_A'. Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated to 0 to find all the numbers when divided by 3 and leaving no remainder in the 'Squared_A' Array.
 
 The data of the numbers, when divided by 3 and left with no remainder, would then be stored in 'Div_by_3' and eventually saved to 'div_by_3.npy' using .save
