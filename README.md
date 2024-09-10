@@ -108,13 +108,14 @@ array([[4],
        [1]])
 ```
 
-Researching more about the two commands, the biggest difference between them is that .reshape(m,n) can only change the shape and not modify the number of elements to it to form the shape it is tasked to create. On the other hand, .resize(m,n) can add or remove the number of elements within an array to force it to become the inputted size. In this problem, both commands can be used as there are enough elements to use .reshape and .resize for the elements to not be modified. I chose to use resize just to be sure
+Researching more about the two commands, I found that the biggest difference between them is that .reshape(m,n) can only change the shape and not modify the number of elements to form the shape it is tasked to create. On the other hand, .resize(m,n) can add or remove the number of elements within an array to force it to become the inputted size. In this problem, both commands can be used as there are enough elements to use .reshape and .resize for the elements to not be modified. I chose to use reshape to make sure no element was modified.
 
 ``` python
 #Resize array to be 10 x 10
-A.resize(10,10)
+A.reshape(10,10)
+```
 
-Using this information, I created an array and inputted the arguments of .arange(1,101,1) to store 1 to 100 integers inside an array. I then used the .resize command to resize the array to be 10x10.
+The next step is to then square all the elements
 I then squared the array using .square and stored the data into a new variable named 'Squared_A'. Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated to 0 to find all the numbers when divided by 3 and leaving no remainder in the 'Squared_A' Array.
 
 The data of the numbers, when divided by 3 and left with no remainder, would then be stored in 'Div_by_3' and eventually saved to 'div_by_3.npy' using .save
