@@ -1,10 +1,21 @@
 # PA2_BON-AO
 Programming Assignment 2 - Bon-ao, Angelo B. - ECE2112 - 2ECED
 
-After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straight on as the needed syntax and commands were already tackled during the previous lesson.
+After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straightforward as the needed syntax and commands were already tackled during the previous lesson.
+
+To start solving both problems, I have to import the libra.ry of Numerical Python as numpy onto the code for it to be used.
+```
+#Import numerical python library
+import numpy as np 
+```
 
 ### 1.
-For the first problem, which is the normalization problem, I used the .random.random command for an array to create a 5x5 array with random variables in it. 
+For the first problem, which is the normalization problem, I used the .random.random command for an array to create a 5x5 array with random variables in it. As seen below,
+
+'''
+
+
+
 For the mean and standard deviation, I individually stored them in a variable as it made coding more readable than straight-up putting the command inside the full equation. 
 I stored the mean in 'mean' and stored the standard deviation in 'std_dev'. 
 
