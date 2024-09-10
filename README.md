@@ -6,7 +6,7 @@ After the lecture on Numerical Python, solving the problems for programming assi
 ### 1.
 To start solving the problem, I have to import the library of Numerical Python as numpy onto the code for it to be used. As such
 ``` python
-#Import numerical python library
+#Import numerical Python library
 import numpy as np 
 ```
 Now, I can start to solve the problem and call numerical Python functions.
@@ -20,7 +20,7 @@ array([[0.41993434, 0.04122826, 0.8373043 ],
        [0.50643017, 0.78434918, 0.38655454]])
 ```
 
-Using this information, I created an array to create a 5x5 array with the purely random elements in it and storing it to the variable X. As seen below,
+Using this information, I created an array to create a 5x5 array with purely random elements in it and stored it to the variable X. As seen below,
 
 ``` python
 #Store random 5x5 array in X
@@ -61,14 +61,14 @@ np.save('X_normalized.npy', Z_X)
 ### 2.
 To start solving the problem, I have to import the library of Numerical Python as numpy onto the code for it to be used. As such
 ``` python
-#Import numerical python library
+#Import numerical Python library
 import numpy as np 
 ```
 Now, I can start to solve the problem and call numerical Python functions.
 
 For the second problem, which is the Divisible by 3 problem, I was initially stuck on how to create an array of integers ranging from 1 to 100 and to make it specifically 10x10. I decided to split the two tasks and try to do them one at a time. 
 
-Looking back at the notes from the previous lecture, .arange(l,u,i) is used for collecting the range of numbers, from the lower limit to the upper limit, with the upper limit not included, and an interval splitting the variables in the range. The code used as en example during the lecture can be seen below:
+Looking back at the notes from the previous lecture, .arange(l,u,i) is used for collecting the range of numbers, from the lower limit to the upper limit, with the upper limit not included, and an interval splitting the variables in the range. The code used as an example during the lecture can be seen below:
 ``` python
 #syntax: np.arange(first:last - interval)
 #does not include upper limit
@@ -159,7 +159,7 @@ print(Div_by_3)
  7569 8100 8649 9216 9801]
 ```
 
-The last step of the solution to problem two is to save the array of 'Div_by_3'  as 'div_by_3.npy'; the code can be seen below;
+The last step of the solution to problem two is to save the array of 'Div_by_3'  as 'div_by_3.npy'. Using .save again, the code can be seen below;
 ``` python
 #Save array with elements divisble by 3 to 'div_by_3.npy'
 np.save('div_by_3.npy',Div_by_3)
