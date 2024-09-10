@@ -81,13 +81,32 @@ z
 array([3. , 3.5, 4. , 4.5, 5. , 5.5, 6. , 6.5])
 ```
 
-Using this information, I could create an array, and inside the argument of the array is the command of np.range of all first one hundred positive integers, which is what I did. It is shown below as to how the code was executed and implemented for the problem.
+Using this information, I could create an array, and inside the argument of the array is the command of np.arange of all first one hundred positive integers, which is what I did. It is shown below as to how the code was executed and implemented for the problem.
 ``` python
 #Create array of all first 100 positive integers
 A = np.array(np.arange(1,101,1))
 ```
 
-The stored array in A now has the elements of all the first one hundred integers. Recakking
+The stored array in A now has the elements of all the first one hundred integers. Now for the second step, which is for the array to be 10x10. Recalling the lecture, a command of .resize and .reshape was used as seen below
+``` python
+b.resize(3,2)                        
+b
+
+#Sample Output
+array([[4, 6],
+       [5, 3],
+       [2, 1]])
+
+b.reshape(6,1)
+
+#Sample Output
+array([[4],
+       [6],
+       [5],
+       [3],
+       [2],
+       [1]])
+```
 
 Using this information, I created an array and inputted the arguments of .arange(1,101,1) to store 1 to 100 integers inside an array. I then used the .resize command to resize the array to be 10x10.
 I then squared the array using .square and stored the data into a new variable named 'Squared_A'. Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated to 0 to find all the numbers when divided by 3 and leaving no remainder in the 'Squared_A' Array.
