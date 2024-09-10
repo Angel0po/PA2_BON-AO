@@ -36,7 +36,7 @@ Inputting all the data inside the equation given by the problem, I then calculat
 Z_X = (X - mean)/std_dev
 ```
 
-Finally, the last step for the problem. I recalled a command used during the lecture which was np.load as seen below, I figured as much that there should be an equivalent save command that saves an array which turned out to be np.save
+Finally, the last step for the problem. I recalled a command used during the lecture which was np.load as seen below, I figured as much that there should be an equivalent save command that saves an array which turned out to be np.save.
 ``` python
 #viewing the contents on a numpy file
 #syntax - np.load('filename.py')
@@ -51,7 +51,22 @@ np.save('X_normalized.npy', Z_X)
 ```
 
 ### 2.
-For the second problem, which is the Divisible by 3 problem, I was initially stuck on how to create an array of integers ranging from 1 to 100 and to make it specifically 10x10. I decided to split the two and tasks and try to do them one at a time. Looking back at the notes from the previous lecture, .arange(l,u,i) is used for collecting the range of numbers, from the lower limit to the upper limit, with the upper limit not included, and an interval splitting the variables in the range.
+For the second problem, which is the Divisible by 3 problem, I was initially stuck on how to create an array of integers ranging from 1 to 100 and to make it specifically 10x10. I decided to split the two and tasks and try to do them one at a time. 
+
+Looking back at the notes from the previous lecture, .arange(l,u,i) is used for collecting the range of numbers, from the lower limit to the upper limit, with the upper limit not included, and an interval splitting the variables in the range. The code used as en example during the lecture can be seen below:
+``` python
+#syntax: np.arange(first:last - interval)
+#does not include upper limit
+
+# axis 0 only
+z = np.arange(3,7,0.5)
+z
+
+#Output
+array([3. , 3.5, 4. , 4.5, 5. , 5.5, 6. , 6.5])
+```
+
+
 
 Using this information, I created an array and inputted the arguments of .arange(1,101,1) to store 1 to 100 integers inside an array. I then used the .resize command to resize the array to be 10x10.
 I then squared the array using .square and stored the data into a new variable named 'Squared_A'. Then, to find all the integers divisible by 3, I used the modulo 3 '%3' and equated to 0 to find all the numbers when divided by 3 and leaving no remainder in the 'Squared_A' Array.
