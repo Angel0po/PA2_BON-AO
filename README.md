@@ -13,7 +13,7 @@ The second problem wants us to determine all the elements that are divisible by 
 
 After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straightforward as the needed syntax and commands were already tackled during the previous lesson.
 
-### 1.
+### 1. Normalization Problem
 To start solving the problem, I have to import the library of Numerical Python as numpy onto the code for it to be used. As such
 ``` python
 #Import numerical Python library
@@ -101,7 +101,7 @@ np.save('X_normalized.npy', Z_X)
  [ 1.41749808 -0.5516239  -1.03775693 -0.47167949 -1.1941489 ]]
 ```
 
-### 2.
+### 2. Divisible by 3
 To start solving the problem, I have to import the library of Numerical Python as numpy onto the code for it to be used. As such
 ``` python
 #Import numerical Python library
