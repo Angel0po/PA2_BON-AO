@@ -58,6 +58,39 @@ And for saving the normalized array to 'X_normalized.npy', the code executed is 
 np.save('X_normalized.npy', Z_X)
 ```
 
+The finished code would look like this
+``` python
+#Start
+
+#Import numerical python library
+import numpy as np
+
+#Store random 5x5 array in X
+X = np.array(np.random.random((5,5)))
+
+#Store and Calculate mean and standard deviation 
+mean = X.mean()
+std_dev = X.std()
+
+#Calculate normalized array
+Z_X = (X - mean)/std_dev
+
+#Save normalized array to 'X_normalized.npy'
+np.save('X_normalized.npy', Z_X)
+
+#end
+```
+
+``` python
+#Sample Output
+
+[[ 1.48293407  0.54563574  0.40173804 -0.40444156  0.53172264]
+ [-1.33656643  1.39518146  1.28356454  0.22754209 -0.59228945]
+ [ 0.77143367 -0.85877205 -0.45229671 -1.24569123 -0.42825375]
+ [ 0.33605035  1.42142444 -1.03499808  1.40938648 -1.61559311]
+ [ 1.41749808 -0.5516239  -1.03775693 -0.47167949 -1.1941489 ]]
+```
+
 ### 2.
 To start solving the problem, I have to import the library of Numerical Python as numpy onto the code for it to be used. As such
 ``` python
