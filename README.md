@@ -1,6 +1,8 @@
 # PA2_BON-AO
 Programming Assignment 2 - Bon-ao, Angelo B. - ECE2112 - 2ECED
 
+## Mark
+
 After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straightforward as the needed syntax and commands were already tackled during the previous lesson.
 
 ### 1.
@@ -197,3 +199,41 @@ The last step of the solution to problem two is to save the array of 'Div_by_3' 
 #Save array with elements divisble by 3 to 'div_by_3.npy'
 np.save('div_by_3.npy',Div_by_3)
 ```
+
+The finished code would look like this
+``` python
+#start
+
+#Import numerical python library
+import numpy as np
+
+#Create array of all first 100 positive integers
+A = np.array(np.arange(1,101,1))
+print(A)
+#Resize array to be 10 x 10
+A.resize(10,10)
+print(A)
+#Stores a new array that squared every element by itself
+Squared_A = np.square(A)
+
+#Stores every element from Squared_A that is divisible by 3
+Div_by_3 = Squared_A[A%3==0]
+print(Div_by_3)
+#Save array with elements divisble by 3 to 'div_by_3.npy'
+np.save('div_by_3.npy',Div_by_3)
+
+#end
+```
+
+``` python
+#Sample Output
+[   9   36   81  144  225  324  441  576  729  900 1089 1296 1521 1764
+ 2025 2304 2601 2916 3249 3600 3969 4356 4761 5184 5625 6084 6561 7056
+ 7569 8100 8649 9216 9801]
+```
+
+[   9   36   81  144  225  324  441  576  729  900 1089 1296 1521 1764
+ 2025 2304 2601 2916 3249 3600 3969 4356 4761 5184 5625 6084 6561 7056
+ 7569 8100 8649 9216 9801]
+```
+
