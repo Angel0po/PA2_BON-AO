@@ -1,6 +1,12 @@
 # PA2_BON-AO
 Programming Assignment 2 - Bon-ao, Angelo B. - ECE2112 - 2ECED
 
+## CODING PROBLEMS GIVEN
+
+### 1. Normalization Problem
+The first problem instructs us to normalize the variable X, which is an array of 5x5 with random elements, using .mean() and .std() calls for element-wise.
+
+
 ## Code Solving and Breakdown
 
 After the lecture on Numerical Python, solving the problems for programming assignment two was pretty straightforward as the needed syntax and commands were already tackled during the previous lesson.
@@ -236,4 +242,6 @@ np.save('div_by_3.npy',Div_by_3)
  2025 2304 2601 2916 3249 3600 3969 4356 4761 5184 5625 6084 6561 7056
  7569 8100 8649 9216 9801]
 ```
+
+---
 
