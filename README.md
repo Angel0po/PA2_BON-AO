@@ -4,8 +4,10 @@ Programming Assignment 2 - Bon-ao, Angelo B. - ECE2112 - 2ECED
 ## CODING PROBLEMS GIVEN
 
 ### 1. Normalization Problem
-The first problem instructs us to normalize the variable X, which is an array of 5x5 with random elements, using .mean() and .std() calls for element-wise.
+The first problem wants us to normalize the variable X, which is an array of 5x5 with random elements, using .mean() and .std() calls for element-wise calculations. It also instructs us to save your normalized ndarray as X_normalized.npy
 
+### 2. Divisible by 3
+The second problem wants us to determine all the elements that are divisible by 3 from the 10x10 array with elements of squares of the first 100 positive integers. The result would then be saved as div_by_3.npy.
 
 ## Code Solving and Breakdown
 
